@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- Rating state start -->
+  <div class="rating-state-start">
+    <div class="grid-wrapper">
+      <div class="grid-container-rs-s">
+        <div class="star-img">
+          <img src="images/icon-star.svg" alt="icon-star" class="star">
+        </div>
+        <div class="heading">
+          <h1 class="main-heading">How did we do?</h1>
+        </div>
+        <div class="main-para">
+          <p class="des">Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+        </div>
+        <div class="ratings-rs">
+          <ul class="ratings-ul">
+            <li class="ratings-li"><button class="ratings-li-btn">1</button></li>
+            <li class="ratings-li"><button class="ratings-li-btn">2</button></li>
+            <li class="ratings-li"><button class="ratings-li-btn">3</button></li>
+            <li class="ratings-li"><button class="ratings-li-btn">4</button></li>
+            <li class="ratings-li"><button class="ratings-li-btn">5</button></li>
+          </ul>
+        </div>
+        <div class="sumbit-btn">
+          <a href="#" class="main-btn" id="submit">Submit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Rating state end -->
+  <!-- Thank you state start -->
+  <div class="thanks-state display-none">
+    <div class="grid-wrapper-next">
+      <div class="grid-container-thanks-s">
+        <div class="hero-img-thanks">
+          <img src="images/illustration-thank-you.svg" alt="illustration-thank-you" class="thanks-illustration">
+        </div>
+        <div class="rating-user">
+          <p class="rating-p">You selected <span id="user-selected-rating">5</span> out of 5</p>
+        </div>
+        <div class="thanks-heading">
+          <hi class="thanks-h1">Thank you!</hi>
+        </div>
+        <div class="thanks-para">
+          <p class="thanks-p">We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
+        </div>
+        <div class="sumbit-btn-again">
+          <a href="#" class="again-btn" id="rate-again">Rate Again</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Thank you state end -->
+  <div class="attribution">
+    <p class="attribution-1">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="attribution-a"> Frontend Mentor</a>.</p>
+    <p class="attribution-2">Coded by <a href="#" class="attribution-a">Your Name Here</a>.</p>
+  </div>
+  <script src="app/index.js"></script>
+</body>
+</html>
